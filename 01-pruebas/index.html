@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ux.ed.team/css/styles.css?201803301710">
+    <title>OPP</title>
+</head>
+<body>
+    <!-- Formulario Cursos -->
+    <div class="ed-grid">
+        <h1>EDCursos</h1>
+        <form id="formCursos">
+            <h2>Crear Curso</h2>
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label>
+                        Nombre
+                        <input type="text" name="nombreCurso" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Poster
+                        <input type="text" name="posterCurso" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Clases
+                        <input type="number" min="1" name="clasesCurso" required>
+                    </label>
+                </div>
+                <div class="form-item m-py-3">
+                    <input class="button" type="submit" value="Crear Curso">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Formulario Profesores -->
+    <div class="ed-grid">
+        <form id="formProfesor">
+            <h2>Crear Profesores</h2>
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label>
+                        Nombre
+                        <input type="text" name="nombreProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Apellido
+                        <input type="text" name="apellidoProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Email
+                        <input type="email" min="1" name="emailProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Courses
+                        <input type="text" min="1" name="cursosProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item m-py-3">
+                    <input class="button" type="submit" value="Crear Profesor">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Formulario Alumnos-->
+    <!-- Tabla de Profesores-->
+    <table class="table-container center-content" id="profesores">
+        <caption>Profesores</caption>
+        <th>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Email</td>
+            <td>Cursos Impartidos</td>
+        </th>
+    </table>
+    <!-- Tabla de Profesores -->
+
+    <!-- Despliegue Cursos -->
+    <div class="ed-grid m-grid-4 s-grid-2 row-gap" id="cursos"></div>
+
+    <!-- Conexión del JS -->
+    <script src="./scripts/03.js" type="module"></script>
+</body>
+</html>
